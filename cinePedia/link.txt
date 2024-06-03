@@ -17,3 +17,8 @@ https://api.themoviedb.org/3/movie/top_rated?api_key=ae69d47404f057e1066a811cf51
 upcoming:
 https://api.themoviedb.org/3/movie/upcoming?api_key=ae69d47404f057e1066a811cf514f16e&language=en-US&page=1
 
+
+/////////////////////////////////////////////////
+backup image:
+https://images.unsplash.com/photo-1640007689209-3ccc3f59c6a1?q=80&w=992&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+
