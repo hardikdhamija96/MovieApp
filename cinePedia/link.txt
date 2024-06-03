@@ -1,0 +1,19 @@
+api key :ae69d47404f057e1066a811cf514f16e
+
+now playing : 
+https://api.themoviedb.org/3/movie/now_playing?api_key=ae69d47404f057e1066a811cf514f16e&language=en-US&page=1
+
+/////////////////////////////////////////////////////
+popular:
+https://api.themoviedb.org/3/movie/popular?api_key=ae69d47404f057e1066a811cf514f16e&language=en-US&page=1
+
+//////////////////////////////////////////////////
+top-rated:
+https://api.themoviedb.org/3/movie/top_rated?api_key=ae69d47404f057e1066a811cf514f16e&language=en-US&page=1
+
+
+
+/////////////////////////////////////////////////////
+upcoming:
+https://api.themoviedb.org/3/movie/upcoming?api_key=ae69d47404f057e1066a811cf514f16e&language=en-US&page=1
+
