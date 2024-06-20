@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import PageNotFoundImage from "../assets/images/pageNotFound.jpg";
+import useTitle from "../hooks/useTitle";
 
-export const PageNotFound = () => {
+export const PageNotFound = ({title}) => {
+
+  useTitle(`CinePedia - ${title}`)
   return (
     <main>
       <section className="flex flex-col justify-center px-2">

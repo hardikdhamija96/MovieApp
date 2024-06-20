@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import backupImage from "../assets/images/notAvailable.png";
+import useTitle from "../hooks/useTitle";
 
 export const MovieDetail = () => {
   const params = useParams();
@@ -17,6 +18,8 @@ export const MovieDetail = () => {
 
     fetchMovies();
   }, [params.id]);
+
+  useTitle(`CinePedia - ${movie.title}`)
 
   if (!movie)
     return (
@@ -44,12 +47,12 @@ export const MovieDetail = () => {
     const movieImage = movie.poster_path ? `https://image.tmdb.org/t/p/original/${movie.poster_path}`:backupImage;
 
   return (
-    <main>
-      <section className="flex justify-around flex-wrap py-5">
+    <main className="">
+      <section className="flex justify-around flex-wrap py-5 dark:bg-gray-800">
         <div className="max-w-sm">
           <img className="rounded" src={movieImage} alt={movie.title} />
         </div>
-        <div className="max-w-2xl text-gray-700 text-lg dark:text-white">
+        <div className="max-w-2xl text-gray-700 text-lg dark:text-white dark:bg-gray-800">
           <h1 className="text-4xl font-bold my-3 text-center lg:text-left">{movie.title}</h1>
           <p className="my-4">{movie.overview}</p>
             { movie.genres ? (
